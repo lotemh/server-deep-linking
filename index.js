@@ -16,6 +16,14 @@ app.get('/', function(request, response) {
   });
 });
 
+app.get('/cat', function(request, response) {
+    response.render('pages/cat');
+});
+
+app.get('/horse', function(request, response) {
+    response.render('pages/horse');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

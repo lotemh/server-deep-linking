@@ -5,12 +5,12 @@
 </head>
 
 <body>
-<h1><%= sectionUrl %></h1>
-<h1><%= target %></h1>
-<a href="<%= sectionUrl%>my-internal-page" target=<%=target%>>link</a>
 
   <% include ../partials/nav.ejs %>
-
+<div>
+<a href="<%= sectionUrl%>cat" target=<%=target%>>link to cat</a>
+</div>
+  <a href="<%= sectionUrl%>horse" target=<%=target%>>link to horse</a>
 </body>
 <script type="text/javascript">
 </script>
